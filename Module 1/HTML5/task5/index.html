@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Event Registration Form</title>
+
+    <style>
+
+        body{
+
+            font-family: Arial;
+
+            background-color: #f4f4f4;
+        }
+
+        .formContainer{
+
+            width: 400px;
+
+            margin: 40px auto;
+
+            background-color: white;
+
+            padding: 25px;
+
+            border-radius: 10px;
+
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h1{
+
+            text-align: center;
+
+            color: #2b6cb0;
+        }
+
+        input,
+        select,
+        textarea{
+
+            width: 100%;
+
+            padding: 10px;
+
+            margin-top: 10px;
+
+            margin-bottom: 15px;
+
+            border: 1px solid gray;
+
+            border-radius: 5px;
+        }
+
+        button{
+
+            width: 100%;
+
+            padding: 10px;
+
+            background-color: #2b6cb0;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 5px;
+
+            font-size: 16px;
+
+            cursor: pointer;
+        }
+
+        button:hover{
+
+            background-color: #1e4f80;
+        }
+
+        output{
+
+            display: block;
+
+            margin-top: 15px;
+
+            color: green;
+
+            font-weight: bold;
+
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="formContainer">
+
+        <h1>Community Event Registration</h1>
+
+
+        <form onsubmit="showMessage(event)">
+
+            <!-- Name Field -->
+
+            <input type="text"
+                   placeholder="Enter Your Name"
+                   required
+                   autofocus>
+
+            <!-- Email Field -->
+
+            <input type="email"
+                   placeholder="Enter Your Email"
+                   required>
+
+            <!-- Date Field -->
+
+            <input type="date"
+                   required>
+
+            <!-- Event Type -->
+
+            <select required>
+
+                <option value="">
+                    Select Event Type
+                </option>
+
+                <option>
+                    Music Festival
+                </option>
+
+                <option>
+                    Sports Event
+                </option>
+
+                <option>
+                    Art Exhibition
+                </option>
+
+            </select>
+
+            <!-- Message Field -->
+
+            <textarea rows="5"
+                      placeholder="Enter Your Message"
+                      required></textarea>
+
+            <!-- Submit Button -->
+
+            <button type="submit">
+
+                Register
+
+            </button>
+
+            <!-- Output Message -->
+
+            <output id="confirmation"></output>
+
+        </form>
+
+    </div>
+
+    <script>
+
+        function showMessage(event){
+
+            event.preventDefault();
+
+            document.getElementById("confirmation").innerHTML =
+
+            "Registration Successful!";
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Utilities</title>
+
+    <link rel="stylesheet"
+          href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5 mb-5">
+
+    <!-- Exercise 16.2 -->
+
+    <h2 class="text-center text-primary mb-4">
+        Image with Badge Overlay
+    </h2>
+
+    <div class="d-flex justify-content-center">
+
+        <div class="position-relative">
+
+            <img src="https://via.placeholder.com/300x200"
+                 alt="Product Image"
+                 class="img-fluid rounded shadow">
+
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                New
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+
+        <p>
+            The badge is positioned over the image using
+            position-relative and position-absolute.
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Exercise 16.1 -->
+
+<footer class="position-fixed bottom-0 start-0 w-100 bg-dark text-white text-center py-3">
+
+    © 2026 Bootstrap Positioning Utilities Demo
+
+</footer>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

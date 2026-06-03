@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards and Media Objects</title>
+
+    <link rel="stylesheet"
+          href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+
+    <!-- Exercise 11.1 -->
+
+    <h2 class="text-center text-primary mb-4">
+        Profile Card
+    </h2>
+
+    <div class="row justify-content-center mb-5">
+
+        <div class="col-md-4">
+
+            <div class="card shadow">
+
+                <img src="https://via.placeholder.com/350x250"
+                     class="card-img-top"
+                     alt="Profile Image">
+
+                <div class="card-body">
+
+                    <h4 class="card-title">
+                        John Doe
+                    </h4>
+
+                    <p class="card-text">
+                        Front-End Developer passionate about creating
+                        responsive and user-friendly websites.
+                    </p>
+
+                    <button class="btn btn-primary">
+                        View Profile
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Exercise 11.2 -->
+
+    <h2 class="text-center text-success mb-4">
+        Media Object Layout
+    </h2>
+
+    <div class="card p-3 shadow">
+
+        <div class="d-flex align-items-start">
+
+            <img src="https://via.placeholder.com/120"
+                 class="me-3 rounded"
+                 alt="Media Image">
+
+            <div>
+
+                <h4>
+                    Bootstrap Media Object
+                </h4>
+
+                <p>
+                    This layout displays an image on the left and content
+                    on the right. Bootstrap 5 no longer includes the
+                    media object component, so Flexbox utilities are used
+                    to achieve the same result.
+                </p>
+
+                <button class="btn btn-success">
+                    Read More
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
