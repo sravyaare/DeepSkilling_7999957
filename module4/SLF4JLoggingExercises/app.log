@@ -1,0 +1,4 @@
+21:49:46.787 [main] DEBUG o.e.s.e.AppenderLoggingExample - Debug Message
+21:49:46.789 [main] INFO  o.e.s.e.AppenderLoggingExample - Information Message
+21:49:46.789 [main] WARN  o.e.s.e.AppenderLoggingExample - Warning Message
+21:49:46.789 [main] ERROR o.e.s.e.AppenderLoggingExample - Error Message

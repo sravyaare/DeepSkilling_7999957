@@ -1,0 +1,22 @@
+package org.example.junitspringexercises.exercise2;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service("exercise2UserService")
+public class UserService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public User getUserById(Long id) {
+
+        return userRepository
+                .findById(id)
+                .orElse(null);
+    }
+
+    public void setUserRepository(UserRepository userRepository) {
+        this.userRepository = userRepository;
+    }
+}
