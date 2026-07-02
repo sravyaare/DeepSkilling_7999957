@@ -1,0 +1,106 @@
+/* =========================
+   Body Styling
+========================= */
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+
+/* =========================
+   Main Heading Styling
+========================= */
+
+.mainTitle{
+    text-align: center;
+    color: darkblue;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Event Card Styling
+========================= */
+
+.eventCard{
+
+    background-color: white;
+
+    border: 3px solid #007BFF;
+
+    padding: 25px;
+
+    margin: 30px;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   Paragraph Styling
+========================= */
+
+p{
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   Input Field Styling
+========================= */
+
+input{
+
+    width: 250px;
+
+    padding: 12px;
+
+    border: 2px solid gray;
+
+    border-radius: 5px;
+}
+
+
+/* =========================
+   Outline Example
+========================= */
+
+input:focus{
+
+    outline: 3px solid orange;
+}
+
+
+/* =========================
+   visibility:hidden Example
+========================= */
+
+.hiddenBox{
+
+    background-color: lightblue;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    visibility: hidden;
+}
+
+
+/* =========================
+   display:none Example
+========================= */
+
+.noneBox{
+
+    background-color: pink;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    display: none;
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Visibility</title>
+
+    <link rel="stylesheet"
+          href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+
+    <!-- Exercise 14.1 -->
+
+    <h2 class="text-center text-primary mb-4">
+        Display and Visibility Utilities
+    </h2>
+
+    <!-- Hidden on all screens -->
+    <div class="d-none bg-danger text-white p-3 rounded mb-3">
+        This section is hidden on all screen sizes.
+    </div>
+
+    <!-- Visible only on md and above -->
+    <div class="d-none d-md-block bg-success text-white p-3 rounded mb-3">
+        This section is visible on Tablets and Desktops.
+    </div>
+
+    <!-- Flex layout only on lg and above -->
+    <div class="d-none d-lg-flex justify-content-between bg-warning p-3 rounded mb-5">
+
+        <div>
+            Large Screen Item 1
+        </div>
+
+        <div>
+            Large Screen Item 2
+        </div>
+
+        <div>
+            Large Screen Item 3
+        </div>
+
+    </div>
+
+    <!-- Exercise 14.2 -->
+
+    <h2 class="text-center text-success mb-4">
+        Responsive Sidebar
+    </h2>
+
+    <div class="row">
+
+        <!-- Sidebar visible only on md and above -->
+
+        <div class="col-md-3 d-none d-md-block">
+
+            <div class="bg-dark text-white p-4 rounded">
+
+                <h4>Sidebar</h4>
+
+                <ul class="list-unstyled">
+                    <li class="mb-2">Dashboard</li>
+                    <li class="mb-2">Profile</li>
+                    <li class="mb-2">Settings</li>
+                    <li class="mb-2">Reports</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!-- Main Content -->
+
+        <div class="col-md-9">
+
+            <div class="bg-light border p-4 rounded">
+
+                <h3>Main Content Area</h3>
+
+                <p>
+                    This content is always visible.
+                    The sidebar appears only on tablets and larger screens.
+                </p>
+
+                <p>
+                    On mobile devices, only this content section is displayed.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

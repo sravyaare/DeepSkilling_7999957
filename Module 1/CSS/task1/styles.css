@@ -1,0 +1,21 @@
+/* Header styles */
+
+h2{
+    color: rgb(34, 34, 221);
+    text-align: center;
+}
+
+/* Paragraph styles */
+
+.eventText{
+    font-size: 18px;
+    color: #280000;
+    text-align: center;
+}
+
+/* Body extra styling */
+
+body{
+    font-family: 'Times New Roman',  sans-serif;
+    margin: 20px;
+}

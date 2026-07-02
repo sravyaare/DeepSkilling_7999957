@@ -1,0 +1,142 @@
+/* =========================
+   Body Styling
+========================= */
+
+body{
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    background-color: #f4f4f4;
+}
+
+/* =========================
+   Navigation Bar Styling
+========================= */
+
+.navbar{
+
+    background-color: darkblue;
+
+    padding: 2vh;
+
+    text-align: center;
+}
+/* Navigation Links */
+
+.navbar a{
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 2vw;
+
+    font-size: 1.2rem;
+}
+/* =========================
+   Flexbox Container
+========================= */
+
+.container{
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 3vw;
+
+    padding: 5vh;
+
+    flex-wrap: wrap;
+}
+/* =========================
+   Event Card Styling
+========================= */
+
+.eventCard{
+
+    background-color: white;
+
+    width: 35%;
+
+    padding: 2vh;
+
+    border-radius: 10px;
+
+    box-shadow: 0 0 10px lightgray;
+
+    text-align: center;
+}
+/* =========================
+   Image Styling
+========================= */
+
+img{
+
+    width: 100%;
+
+    height: auto;
+
+    border-radius: 10px;
+}
+/* =========================
+   Heading Styling
+========================= */
+
+h2{
+
+    color: darkred;
+
+    font-size: 2vw;
+}
+/* =========================
+   Paragraph Styling
+========================= */
+
+p{
+
+    font-size: 1.1vw;
+
+    line-height: 1.6;
+}
+/* =========================
+   Media Query
+========================= */
+
+@media screen and (max-width: 768px){
+
+    /* Stack Navigation Links */
+
+    .navbar a{
+
+        display: block;
+
+        margin: 10px 0;
+
+        font-size: 18px;
+    }
+    /* Event Cards Full Width */
+
+    .eventCard{
+
+        width: 90%;
+    }
+    /* Reduce Font Sizes */
+
+    h2{
+
+        font-size: 24px;
+    }
+
+    p{
+
+        font-size: 16px;
+    }
+    /* Reduce Image Height */
+
+    img{
+
+        height: auto;
+    }
+}
