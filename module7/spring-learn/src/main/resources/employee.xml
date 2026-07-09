@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Skills -->
+
+    <bean id="java" class="com.cognizant.handson3.model.Skill">
+        <property name="id" value="1"/>
+        <property name="name" value="Java"/>
+    </bean>
+
+    <bean id="angular" class="com.cognizant.handson3.model.Skill">
+        <property name="id" value="2"/>
+        <property name="name" value="Angular"/>
+    </bean>
+
+    <bean id="spring" class="com.cognizant.handson3.model.Skill">
+        <property name="id" value="3"/>
+        <property name="name" value="Spring Boot"/>
+    </bean>
+
+    <!-- Departments -->
+
+    <bean id="dept1" class="com.cognizant.handson3.model.Department">
+        <property name="id" value="1"/>
+        <property name="name" value="Development"/>
+    </bean>
+
+    <bean id="dept2" class="com.cognizant.handson3.model.Department">
+        <property name="id" value="2"/>
+        <property name="name" value="Testing"/>
+    </bean>
+
+</beans>
