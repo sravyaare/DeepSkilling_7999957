@@ -1,0 +1,50 @@
+server:
+  port: 9090
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: greet-service-route
+          uri: lb://greet-service
+          predicates:
+            - Path=/greet-service/**
+          filters:
+            - RewritePath=/greet-service(?<segment>/?.*), $\{segment}
+        - id: account-service-route
+          uri: lb://account-service
+          predicates:
+            - Path=/account-service/**
+          filters:
+            - RewritePath=/account-service(?<segment>/?.*), $\{segment}
+        - id: loan-service-route
+          uri: lb://loan-service
+          predicates:
+            - Path=/loan-service/**
+          filters:
+            - RewritePath=/loan-service(?<segment>/?.*), $\{segment}
+  
+  # OAuth2 Resource Server Configuration (JWT validation public key/issuer uri)
+  # We will set a dummy or simple JWT token issuer/secret validation for demonstration purposes,
+  # or configure local JWT verification bean.
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          # In a real environment, this points to Authorization Server's JWK Set URI, e.g. http://localhost:8080/oauth2/jwks
+          jwk-set-uri: http://localhost:9090/dummy-jwks-uri
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+logging:
+  level:
+    org.springframework.cloud.gateway: INFO
+    org.springframework.web: INFO
+    com.netflix.discovery: INFO
