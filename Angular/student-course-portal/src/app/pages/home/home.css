@@ -1,0 +1,25 @@
+.home-page {
+  padding: 2rem;
+}
+
+.stats-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.stat-card span {
+  font-size: 1.25rem;
+  font-weight: 700;
+}

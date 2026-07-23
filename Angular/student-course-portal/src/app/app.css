@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  background: #f8fafc;
+  color: #111827;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.page-content {
+  padding: 2rem;
+}
